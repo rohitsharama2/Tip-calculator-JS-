@@ -1,0 +1,66 @@
+<!-- Instructions
+Hello Everyone,
+Here is assignment which will help you introduce a close to real application of JavaScript:
+
+As a user, you went to a restaurant, based on your experience you wants to pay tip to the waiter. 
+
+For example if the experience is excellent and the total bill is 2000 
+
+The total tip would be 20% of 2000 i.e 400 Rs, if you are total 5 people, the per head tip would be 80Rs 
+
+You need to show 80 as an output. 
+
+ 
+
+Refer to the attached image for the functionality UI.  -->
+
+<!DOCTYPE html>
+ <head >
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+   
+     
+ </head>
+ <body style="background-image: url('https://img.freepik.com/free-photo/restaurant-interior_1127-3394.jpg?size=626&ext=jpg');" >
+    <div class="container " style="text-align: center;  border-style: solid ;  background-color:cyan; width: 12cm; margin-left: 15cm; margin-top: 3cm;" >
+      <h1 style="text-align: center; border-style:double; border-color: crimson; background-color: darkred;"  >TIP CALCULATOR</h1>  
+      <form  > 
+        <h3>Enter your bill amount </h3>
+        </br>
+        <input type="Number" id="bill">
+        </br>
+        <div><h3>How was the service</h3></div>
+      
+            <select name= Service id="values">
+            <option value="20 ">Excellent-20%</option>
+            <option value="10">Good-10%</option>
+            <option value="5">average-5%</option>
+            </select>
+            
+        <div>
+        <h3>How many people</h3>
+        </br>
+        <input type="=Number" id="no.ofpeople">
+        </div>
+    
+        </br>
+
+        <div>The calculated tip is</div>
+        <p>Rs <span id="tip"> </span></p>
+        <p>Each</p>
+       
+
+      </form>
+      
+    
+     <button onclick="calc()" style="color: darkred; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"> Calculate</button>
+    </div>
+   
+    <script type="text/javascript" src="./tipc.js"></script>
+    
+ 
+ </body>
+</html>
